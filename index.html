@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,43 +8,65 @@
     <link rel="stylesheet" href="./style.css">
     <title>Cash register</title>
 </head>
-<body>
-    <div class="container">
-        <h1 class="heading"> Cash Register</h1>
-        <p>text</p>
-        
-        <h3>Bill Amount</h3>
-        <input id="bill-amount" type="text" />
-        <h3>Cash Amount</h3>
-        <input id="cash-amount" type="text" />
-        <button id="check-button">check</button>
-        <p id="error-message"></p>
-        <table>
-            <caption>...Return change...</caption>
-            <tr>
-                <th>No. of Notes</th>
-                <td class="list-of-notes"></td>
-                <td class="list-of-notes"></td>
-                <td class="list-of-notes"></td>
-                <td class="list-of-notes"></td>
-                <td class="list-of-notes"></td>
-                <td class="list-of-notes"></td>
-                <td class="list-of-notes"></td>
-            </tr>
-            <tr>
-                <th>Notes</th>
-                <td>2000</td>
-                <td>500</td>
-                <td>100</td>
-                <td>20</td>
-                <td>10</td>
-                <td>5</td>
-                <td>1</td>
-            </tr>
-        </table>
-    </div>
 
+<body>
+
+    <main class="container">
+        <div>
+            <h1 class="heading"> Cash Register</h1>
+            <p class="descreption" >Enter the bill amount and cash given by the customer and know minimum
+                number of notes to return.</p>
+            
+            <label class = "input-label" for="bill-amount">Bill Amount</label><input class="input" id="bill-amount" type="text" />
+            <label class = "input-label" for="cash-amount">Cash Amount</label><input class="input" id="cash-amount" type="text" />
+            
+            
+            <button id="check-button">check</button>
+            <p id="error-message"></p>
+            <table class="change-table" >
+                <caption>...Return change...</caption>
+                <tr>
+                    <th>No. of Notes</th>
+                    <td class="list-of-notes"></td>
+                    <td class="list-of-notes"></td>
+                    <td class="list-of-notes"></td>
+                    <td class="list-of-notes"></td>
+                    <td class="list-of-notes"></td>
+                    <td class="list-of-notes"></td>
+                    <td class="list-of-notes"></td>
+                </tr>
+                <tr>
+                    <th>Notes</th>
+                    <td>2000</td>
+                    <td>500</td>
+                    <td>100</td>
+                    <td>20</td>
+                    <td>10</td>
+                    <td>5</td>
+                    <td>1</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <ul class="list-unordered inline-list">
+            <li>
+                <a class="links" href="https://github.com/sushil-mod/" target="_blank">
+                    <img src="images/github.svg" alt="github" />
+                </a>
+            </li>
+            <li>
+                <a class="links" href="https://www.instagram.com/sushil_vwarrior" target="_blank">
+                    <img src="images/instagram.svg" alt="instagram" />
+                </a>
+            </li>
+        </ul>
+
+
+</footer>
 
     <script src="./app.js"></script>
 </body>
+
 </html>
