@@ -14,16 +14,29 @@
     <main class="container">
         <div>
             <h1 class="heading"> Cash Register</h1>
-            <p class="descreption" >Enter the bill amount and cash given by the customer and know minimum
-                number of notes to return.</p>
-            
-            <label class = "input-label" for="bill-amount">Bill Amount</label><input class="input" id="bill-amount" type="text" />
-            <label class = "input-label" for="cash-amount">Cash Amount</label><input class="input" id="cash-amount" type="text" />
-            
-            
-            <button id="check-button">check</button>
-            <p id="error-message"></p>
-            <table class="change-table" >
+            <p class="descreption">Enter the bill amount and cash given by the customer and know minimum number of notes
+                to return.</p>
+
+            <div class="show-bill">
+                <label class="input-label" for="bill-amount">Bill Amount</label>
+                <input class="input" id="bill-amount" type="text" />
+                <div class="button-next">
+                    <button id="next-button">Next</button>
+                </div>
+            </div>
+
+            <div class="show-cash">
+                <label class="input-label" for="cash-amount">Cash Amount</label>
+                <input class="input" id="cash-amount" type="text" />
+                <div>
+                    <button id="check-button">check</button>
+                </div>
+            </div>
+        
+            <div class="show-error"><p id="error-message"></p></div>
+
+            <div class="show-change">
+                <table class="change-table">
                 <caption>...Return change...</caption>
                 <tr>
                     <th>No. of Notes</th>
@@ -47,6 +60,9 @@
                 </tr>
             </table>
         </div>
+
+            
+        </div>
     </main>
 
     <footer>
@@ -64,7 +80,7 @@
         </ul>
 
 
-</footer>
+    </footer>
 
     <script src="./app.js"></script>
 </body>

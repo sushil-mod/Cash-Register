@@ -21,8 +21,14 @@ body {
 
 
 .container {
-  margin: 4rem auto 7rem;
-  text-align: center;
+  background-color: rgba(104, 212, 176, 0.521);
+    width: 100%;
+    max-width: 80%;
+    margin: auto;
+    padding: 0.9rem 0rem;
+    text-align: center;
+   
+    
 }
 
 .heading {
@@ -30,7 +36,7 @@ body {
 }
 
 .description {
-  font-size: larger;
+  font-size: small;
   margin: 1rem;
 }
 
@@ -51,7 +57,20 @@ body {
   max-width: 258px;
 }
 
-#check-button {
+#next-button{
+  background: var(--primary-color);
+  border: none;
+  color: #fff;
+  padding: 0.7rem 1rem;
+  border-radius: 0.5rem;
+  font-size: large;
+  cursor: pointer;
+  outline: #fff;
+  margin: auto;
+  display: block;
+}
+
+ #check-button  {
   background: var(--primary-color);
   border: none;
   color: #fff;
@@ -71,11 +90,19 @@ body {
 }
 
 
+.show-cash{
+display: none;
+}
+
+.show-change{
+  display: none;
+}
 .change-table {
   width: 50%;
   text-align: justify;
   border-collapse: collapse;
   margin: auto;
+ 
 }
 
 .change-table caption {
